@@ -92,7 +92,10 @@ class MachineOperatorsViewController: UIViewController, UICollectionViewDataSour
 fileprivate extension MachineOperatorsViewController {
 
     func useTemplateTapped() {
+        let viewController = ReadyTemplateStep1ViewController()
+        let navController = UINavigationController(rootViewController: viewController)
 
+        self.present(navController, animated:true, completion: nil)
     }
 
     func createTemplateTapped() {

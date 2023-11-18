@@ -52,3 +52,42 @@ let templateStep6Object: [Step6CellModel] = [
     .init(titleLabel: "Агрегат", descriptionLabel: "КПШ-9"),
     .init(titleLabel: "Техника", descriptionLabel: "RSM 3535")
 ]
+
+let readyTemplateStep1Object: [ReadyTemplateStep1Model] = [
+    .init(
+        titleLabel: "Посев яровой пшеницы",
+        titleSizeLabel: "40 га",
+        descriptionLabel: "Сеялка рядовая",
+        descriptionSizeLabel: "3 см"
+    ),
+    .init(
+        titleLabel: "Обработка культиватором",
+        titleSizeLabel: "30 га",
+        descriptionLabel: "КПШ-9",
+        descriptionSizeLabel: "10–12см"
+    ),
+    .init(
+        titleLabel: "Посев чечевицы",
+        titleSizeLabel: "50 га",
+        descriptionLabel: "Сеялка рядовая № 2",
+        descriptionSizeLabel: "3см"
+    ),
+    .init(
+        titleLabel: "Посев чечевицы",
+        titleSizeLabel: "50 га",
+        descriptionLabel: "Сеялка рядовая № 2",
+        descriptionSizeLabel: "3см"
+    ),
+    .init(
+        titleLabel: "Обработка культиватором",
+        titleSizeLabel: "30 га",
+        descriptionLabel: "КПШ-9",
+        descriptionSizeLabel: "10–12см"
+    ),
+    .init(
+        titleLabel: "Предпосевная обработка почвы",
+        titleSizeLabel: "45 га",
+        descriptionLabel: "ПШП-8",
+        descriptionSizeLabel: "25см"
+    )
+]

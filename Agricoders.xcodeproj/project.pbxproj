@@ -17,6 +17,9 @@
 		358708232B0962E600E6512E /* NewTemplateStep6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708222B0962E600E6512E /* NewTemplateStep6ViewController.swift */; };
 		358708252B09680400E6512E /* Step6Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708242B09680400E6512E /* Step6Cell.swift */; };
 		358708272B09693D00E6512E /* Step6CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708262B09693D00E6512E /* Step6CellModel.swift */; };
+		3587082A2B09773D00E6512E /* ReadyTemplateStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708292B09773D00E6512E /* ReadyTemplateStep1ViewController.swift */; };
+		3587082D2B09786A00E6512E /* ReadyTemplateStep1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587082C2B09786A00E6512E /* ReadyTemplateStep1Cell.swift */; };
+		3587082F2B0978C500E6512E /* ReadyTemplateStep1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587082E2B0978C500E6512E /* ReadyTemplateStep1Model.swift */; };
 		35D4BDB72B07DAED000CE117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDB62B07DAED000CE117 /* AppDelegate.swift */; };
 		35D4BDB92B07DAED000CE117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDB82B07DAED000CE117 /* SceneDelegate.swift */; };
 		35D4BDBB2B07DAED000CE117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDBA2B07DAED000CE117 /* ViewController.swift */; };
@@ -54,6 +57,9 @@
 		358708222B0962E600E6512E /* NewTemplateStep6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateStep6ViewController.swift; sourceTree = "<group>"; };
 		358708242B09680400E6512E /* Step6Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step6Cell.swift; sourceTree = "<group>"; };
 		358708262B09693D00E6512E /* Step6CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6CellModel.swift; sourceTree = "<group>"; };
+		358708292B09773D00E6512E /* ReadyTemplateStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyTemplateStep1ViewController.swift; sourceTree = "<group>"; };
+		3587082C2B09786A00E6512E /* ReadyTemplateStep1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyTemplateStep1Cell.swift; sourceTree = "<group>"; };
+		3587082E2B0978C500E6512E /* ReadyTemplateStep1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyTemplateStep1Model.swift; sourceTree = "<group>"; };
 		35D4BDB32B07DAED000CE117 /* Agricoders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agricoders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D4BDB62B07DAED000CE117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D4BDB82B07DAED000CE117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +154,24 @@
 			path = Step6;
 			sourceTree = "<group>";
 		};
+		358708282B09770200E6512E /* ReadyTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				3587082B2B09774400E6512E /* Step1 */,
+			);
+			path = ReadyTemplates;
+			sourceTree = "<group>";
+		};
+		3587082B2B09774400E6512E /* Step1 */ = {
+			isa = PBXGroup;
+			children = (
+				3587082C2B09786A00E6512E /* ReadyTemplateStep1Cell.swift */,
+				358708292B09773D00E6512E /* ReadyTemplateStep1ViewController.swift */,
+				3587082E2B0978C500E6512E /* ReadyTemplateStep1Model.swift */,
+			);
+			path = Step1;
+			sourceTree = "<group>";
+		};
 		35D4BDAA2B07DAED000CE117 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +193,7 @@
 		35D4BDB52B07DAED000CE117 /* Agricoders */ = {
 			isa = PBXGroup;
 			children = (
+				358708282B09770200E6512E /* ReadyTemplates */,
 				35D4BDF32B08FBB0000CE117 /* CreateTempate */,
 				35D4BDEE2B08E27E000CE117 /* CustomView */,
 				35D4BDEF2B08FB54000CE117 /* MachineOperatorsView */,
@@ -431,11 +456,14 @@
 				358708252B09680400E6512E /* Step6Cell.swift in Sources */,
 				35D4BDEA2B08D5C2000CE117 /* FioStatusView.swift in Sources */,
 				35D4BDD12B0802DF000CE117 /* MainTabBarViewController.swift in Sources */,
+				3587082D2B09786A00E6512E /* ReadyTemplateStep1Cell.swift in Sources */,
 				35D4BDF52B08FBC6000CE117 /* NewTemplateViewController.swift in Sources */,
 				35D4BDE62B08C614000CE117 /* FioView.swift in Sources */,
 				3587081A2B095BC700E6512E /* NewTemplateStep4ViewController.swift in Sources */,
+				3587082F2B0978C500E6512E /* ReadyTemplateStep1Model.swift in Sources */,
 				35D4BDEC2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift in Sources */,
 				35D4BDE42B08C5D7000CE117 /* MachineOperatorsCell.swift in Sources */,
+				3587082A2B09773D00E6512E /* ReadyTemplateStep1ViewController.swift in Sources */,
 				35D4BDBB2B07DAED000CE117 /* ViewController.swift in Sources */,
 				358708162B0945F400E6512E /* NewTemplateStep3ViewController.swift in Sources */,
 				358708272B09693D00E6512E /* Step6CellModel.swift in Sources */,
