@@ -33,35 +33,16 @@ class NFCUtility: NSObject {
     private var completion: ((Result<Void, NFCError>) -> Void)?
     private var url: URL?
 
-    func sendURL(_ url: URL, completion: @escaping (Result<Void, NFCError>) -> Void) {
+    func start(completion: @escaping (Result<Void, NFCError>) -> Void) {
         guard NFCNDEFReaderSession.readingAvailable else {
             completion(.failure(.unavailable))
             print("NFC is not available on this device")
             return
         }
-        self.url = url
         self.completion = completion
         session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: false)
         session?.alertMessage = "Place tag near iPhone to pass the data"
         session?.begin()
-    }
-
-    private func writeURL(to tag: NFCNDEFTag) {
-        guard let urlPayload = url.flatMap(NFCNDEFPayload.wellKnownTypeURIPayload) else {
-            handleError(NFCError.invalidated(message: "Could not create payload"))
-            return
-        }
-        // check url payload type and value
-        let message = NFCNDEFMessage(records: [urlPayload])
-        tag.writeNDEF(message) { [weak self] error in
-            if let error = error {
-                self?.handleError(error)
-                return
-            }
-            self?.session?.alertMessage = "Wrote location data."
-            self?.session?.invalidate()
-            self?.completion?(.success(()))
-        }
     }
 }
 
@@ -98,11 +79,7 @@ extension NFCUtility: NFCNDEFReaderSessionDelegate {
                 case .notSupported:
                     session.alertMessage = "Unsupported tag."
                     session.invalidate()
-                case .readOnly:
-                    session.alertMessage = "Unable to write to tag."
-                    session.invalidate()
-                case .readWrite:
-                    self.writeURL(to: tag)
+                    
                 @unknown default:
                     fatalError()
                 }
