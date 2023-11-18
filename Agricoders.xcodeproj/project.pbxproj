@@ -21,9 +21,12 @@
 		35D4BDDC2B08305F000CE117 /* MachineOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDDB2B08305F000CE117 /* MachineOperatorsViewController.swift */; };
 		35D4BDDE2B08306D000CE117 /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDDD2B08306D000CE117 /* CarsViewController.swift */; };
 		35D4BDE02B08307E000CE117 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDDF2B08307E000CE117 /* ProfileViewController.swift */; };
-		35D4BDE42B08C5D7000CE117 /* MachineOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDE32B08C5D7000CE117 /* MachineOperators.swift */; };
+		35D4BDE42B08C5D7000CE117 /* MachineOperatorsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDE32B08C5D7000CE117 /* MachineOperatorsCell.swift */; };
 		35D4BDE62B08C614000CE117 /* FioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDE52B08C614000CE117 /* FioView.swift */; };
 		35D4BDE82B08C80E000CE117 /* MachineOperatorsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDE72B08C80E000CE117 /* MachineOperatorsModels.swift */; };
+		35D4BDEA2B08D5C2000CE117 /* FioStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDE92B08D5C2000CE117 /* FioStatusView.swift */; };
+		35D4BDEC2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDEB2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift */; };
+		35D4BDF52B08FBC6000CE117 /* NewTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDF42B08FBC6000CE117 /* NewTemplateViewController.swift */; };
 		8C7BD89CF37F3B19EB6E7F8B /* Pods_Agricoders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95675487188D485D95AE89FC /* Pods_Agricoders.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,9 +48,12 @@
 		35D4BDDB2B08305F000CE117 /* MachineOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineOperatorsViewController.swift; sourceTree = "<group>"; };
 		35D4BDDD2B08306D000CE117 /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
 		35D4BDDF2B08307E000CE117 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		35D4BDE32B08C5D7000CE117 /* MachineOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineOperators.swift; sourceTree = "<group>"; };
+		35D4BDE32B08C5D7000CE117 /* MachineOperatorsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineOperatorsCell.swift; sourceTree = "<group>"; };
 		35D4BDE52B08C614000CE117 /* FioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FioView.swift; sourceTree = "<group>"; };
 		35D4BDE72B08C80E000CE117 /* MachineOperatorsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineOperatorsModels.swift; sourceTree = "<group>"; };
+		35D4BDE92B08D5C2000CE117 /* FioStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FioStatusView.swift; sourceTree = "<group>"; };
+		35D4BDEB2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineOperatorsDescriptionView.swift; sourceTree = "<group>"; };
+		35D4BDF42B08FBC6000CE117 /* NewTemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateViewController.swift; sourceTree = "<group>"; };
 		95675487188D485D95AE89FC /* Pods_Agricoders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agricoders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1A1A8EE2C6DA333A997F5A /* Pods-Agricoders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agricoders.release.xcconfig"; path = "Target Support Files/Pods-Agricoders/Pods-Agricoders.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +91,9 @@
 		35D4BDB52B07DAED000CE117 /* Agricoders */ = {
 			isa = PBXGroup;
 			children = (
+				35D4BDF32B08FBB0000CE117 /* CreateTempate */,
+				35D4BDEE2B08E27E000CE117 /* CustomView */,
+				35D4BDEF2B08FB54000CE117 /* MachineOperatorsView */,
 				35D4BDD72B080AED000CE117 /* MainView */,
 				35D4BDD42B080ACB000CE117 /* Models */,
 				35D4BDCF2B0802B9000CE117 /* TabBar */,
@@ -120,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				35D4BDD52B080ADC000CE117 /* Models.swift */,
-				35D4BDE72B08C80E000CE117 /* MachineOperatorsModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,23 +136,80 @@
 		35D4BDD72B080AED000CE117 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				35D4BDD82B080B2C000CE117 /* Cell */,
-				35D4BDD22B08032F000CE117 /* MainViewController.swift */,
-				35D4BDDB2B08305F000CE117 /* MachineOperatorsViewController.swift */,
+				35D4BDF22B08FB82000CE117 /* ViewController */,
+				35D4BDD82B080B2C000CE117 /* MainCell */,
 				35D4BDDD2B08306D000CE117 /* CarsViewController.swift */,
 				35D4BDDF2B08307E000CE117 /* ProfileViewController.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
 		};
-		35D4BDD82B080B2C000CE117 /* Cell */ = {
+		35D4BDD82B080B2C000CE117 /* MainCell */ = {
 			isa = PBXGroup;
 			children = (
 				35D4BDD92B080B37000CE117 /* MainCell.swift */,
-				35D4BDE32B08C5D7000CE117 /* MachineOperators.swift */,
-				35D4BDE52B08C614000CE117 /* FioView.swift */,
 			);
-			path = Cell;
+			path = MainCell;
+			sourceTree = "<group>";
+		};
+		35D4BDED2B08E26A000CE117 /* MachineOperatorsCell */ = {
+			isa = PBXGroup;
+			children = (
+				35D4BDE32B08C5D7000CE117 /* MachineOperatorsCell.swift */,
+				35D4BDEB2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift */,
+			);
+			path = MachineOperatorsCell;
+			sourceTree = "<group>";
+		};
+		35D4BDEE2B08E27E000CE117 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				35D4BDE52B08C614000CE117 /* FioView.swift */,
+				35D4BDE92B08D5C2000CE117 /* FioStatusView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		35D4BDEF2B08FB54000CE117 /* MachineOperatorsView */ = {
+			isa = PBXGroup;
+			children = (
+				35D4BDF12B08FB75000CE117 /* ViewController */,
+				35D4BDF02B08FB67000CE117 /* Models */,
+				35D4BDED2B08E26A000CE117 /* MachineOperatorsCell */,
+			);
+			path = MachineOperatorsView;
+			sourceTree = "<group>";
+		};
+		35D4BDF02B08FB67000CE117 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35D4BDE72B08C80E000CE117 /* MachineOperatorsModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35D4BDF12B08FB75000CE117 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				35D4BDDB2B08305F000CE117 /* MachineOperatorsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		35D4BDF22B08FB82000CE117 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				35D4BDD22B08032F000CE117 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		35D4BDF32B08FBB0000CE117 /* CreateTempate */ = {
+			isa = PBXGroup;
+			children = (
+				35D4BDF42B08FBC6000CE117 /* NewTemplateViewController.swift */,
+			);
+			path = CreateTempate;
 			sourceTree = "<group>";
 		};
 		471EB9F9B0C3D447F9F91100 /* Frameworks */ = {
@@ -279,9 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D4BDEA2B08D5C2000CE117 /* FioStatusView.swift in Sources */,
 				35D4BDD12B0802DF000CE117 /* MainTabBarViewController.swift in Sources */,
+				35D4BDF52B08FBC6000CE117 /* NewTemplateViewController.swift in Sources */,
 				35D4BDE62B08C614000CE117 /* FioView.swift in Sources */,
-				35D4BDE42B08C5D7000CE117 /* MachineOperators.swift in Sources */,
+				35D4BDEC2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift in Sources */,
+				35D4BDE42B08C5D7000CE117 /* MachineOperatorsCell.swift in Sources */,
 				35D4BDBB2B07DAED000CE117 /* ViewController.swift in Sources */,
 				35D4BDDC2B08305F000CE117 /* MachineOperatorsViewController.swift in Sources */,
 				35D4BDB72B07DAED000CE117 /* AppDelegate.swift in Sources */,

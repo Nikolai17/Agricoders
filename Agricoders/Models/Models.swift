@@ -43,38 +43,38 @@ let objects: [AgroObject] = [
         ]
     ),
     .init(
-        field: ("Поле 1", "100 га"),
+        field: ("Поле 2", "100 га"),
         workers: [
-            .init(fio: ("Петров Н.В.", .disable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
+            .init(fio: ("Сидоров Н.В.", .disable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
         ]
     ),
     .init(
-        field: ("Поле 1", "100 га"),
+        field: ("Поле 3", "100 га"),
+        workers: [
+            .init(fio: ("Конашенков Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
+        ]
+    ),
+    .init(
+        field: ("Поле 4", "100 га"),
+        workers: [
+            .init(fio: ("Тестов Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
+        ]
+    ),
+    .init(
+        field: ("Поле 5", "100 га"),
         workers: [
             .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
         ]
     ),
     .init(
-        field: ("Поле 1", "100 га"),
-        workers: [
-            .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
-        ]
-    ),
-    .init(
-        field: ("Поле 1", "100 га"),
-        workers: [
-            .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
-        ]
-    ),
-    .init(
-        field: ("Поле 99", "100 га"),
+        field: ("Поле 6", "100 га"),
         workers: [
             .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га"),
             .init(fio: ("Иванов Н.В.", .enable), machine: .tractor, instr: .cultivator, scopeWork: "40 га")
         ]
     ),
     .init(
-        field: ("Поле 666", "100 га"),
+        field: ("Поле 7", "100 га"),
         workers: [
             .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га"),
             .init(fio: ("Иванов Н.В.", .enable), machine: .tractor, instr: .cultivator, scopeWork: "40 га")

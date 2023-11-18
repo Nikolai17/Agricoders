@@ -10,7 +10,7 @@ import UIKit
 class ProfileViewController: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
-        tabBarItem = UITabBarItem(title: "Настройки", image: UIImage(systemName: "gearshape.fill")?.withRenderingMode(.alwaysTemplate), tag: 3)
+        tabBarItem = UITabBarItem(title: "Настройки", image: UIImage(systemName: "gearshape")?.withRenderingMode(.alwaysTemplate), tag: 3)
       }
 
     required init?(coder: NSCoder) {
