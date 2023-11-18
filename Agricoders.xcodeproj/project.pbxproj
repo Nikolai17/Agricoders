@@ -21,6 +21,9 @@
 		35D4BDDC2B08305F000CE117 /* MachineOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDDB2B08305F000CE117 /* MachineOperatorsViewController.swift */; };
 		35D4BDDE2B08306D000CE117 /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDDD2B08306D000CE117 /* CarsViewController.swift */; };
 		35D4BDE02B08307E000CE117 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDDF2B08307E000CE117 /* ProfileViewController.swift */; };
+		35D4BDE42B08C5D7000CE117 /* MachineOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDE32B08C5D7000CE117 /* MachineOperators.swift */; };
+		35D4BDE62B08C614000CE117 /* FioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDE52B08C614000CE117 /* FioView.swift */; };
+		35D4BDE82B08C80E000CE117 /* MachineOperatorsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDE72B08C80E000CE117 /* MachineOperatorsModels.swift */; };
 		8C7BD89CF37F3B19EB6E7F8B /* Pods_Agricoders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95675487188D485D95AE89FC /* Pods_Agricoders.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,9 @@
 		35D4BDDB2B08305F000CE117 /* MachineOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineOperatorsViewController.swift; sourceTree = "<group>"; };
 		35D4BDDD2B08306D000CE117 /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
 		35D4BDDF2B08307E000CE117 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		35D4BDE32B08C5D7000CE117 /* MachineOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineOperators.swift; sourceTree = "<group>"; };
+		35D4BDE52B08C614000CE117 /* FioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FioView.swift; sourceTree = "<group>"; };
+		35D4BDE72B08C80E000CE117 /* MachineOperatorsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineOperatorsModels.swift; sourceTree = "<group>"; };
 		95675487188D485D95AE89FC /* Pods_Agricoders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agricoders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1A1A8EE2C6DA333A997F5A /* Pods-Agricoders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agricoders.release.xcconfig"; path = "Target Support Files/Pods-Agricoders/Pods-Agricoders.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				35D4BDD52B080ADC000CE117 /* Models.swift */,
+				35D4BDE72B08C80E000CE117 /* MachineOperatorsModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				35D4BDD92B080B37000CE117 /* MainCell.swift */,
+				35D4BDE32B08C5D7000CE117 /* MachineOperators.swift */,
+				35D4BDE52B08C614000CE117 /* FioView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -271,10 +280,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				35D4BDD12B0802DF000CE117 /* MainTabBarViewController.swift in Sources */,
+				35D4BDE62B08C614000CE117 /* FioView.swift in Sources */,
+				35D4BDE42B08C5D7000CE117 /* MachineOperators.swift in Sources */,
 				35D4BDBB2B07DAED000CE117 /* ViewController.swift in Sources */,
 				35D4BDDC2B08305F000CE117 /* MachineOperatorsViewController.swift in Sources */,
 				35D4BDB72B07DAED000CE117 /* AppDelegate.swift in Sources */,
 				35D4BDD32B08032F000CE117 /* MainViewController.swift in Sources */,
+				35D4BDE82B08C80E000CE117 /* MachineOperatorsModels.swift in Sources */,
 				35D4BDCC2B07DC7F000CE117 /* NFCUtility.swift in Sources */,
 				35D4BDE02B08307E000CE117 /* ProfileViewController.swift in Sources */,
 				35D4BDB92B07DAED000CE117 /* SceneDelegate.swift in Sources */,

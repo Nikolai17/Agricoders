@@ -31,6 +31,9 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCell.id, for: indexPath) as? MainCell else { return UICollectionViewCell()}
         let model = objects[indexPath.row]
         cell.configure(model)
+        cell.backgroundColor = .white
+        cell.layer.cornerRadius = 10
+        cell.layer.masksToBounds = true
 
         return cell
     }
@@ -58,8 +61,11 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
 
     func setUp() {
-        view.backgroundColor = .white
+        view.backgroundColor = #colorLiteral(red: 0.9404773116, green: 0.940477252, blue: 0.940477252, alpha: 1)
         title = "Поля"
+        let search = UIBarButtonItem(image: UIImage(named: "search")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action:  #selector(searchTapped))
+        let notification = UIBarButtonItem(image: UIImage(named: "notification")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action:  #selector(notificationTapped))
+        navigationItem.rightBarButtonItems = [search, notification]
 
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .never
@@ -67,5 +73,13 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         collection.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+    }
+
+    @objc func searchTapped() {
+
+    }
+
+    @objc func notificationTapped() {
+
     }
 }

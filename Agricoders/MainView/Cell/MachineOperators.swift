@@ -8,9 +8,9 @@
 import UIKit
 import SnapKit
 
-class MainCell: UICollectionViewCell {
+class MachineOperatorsCell: UICollectionViewCell {
 
-    static let id = "mainCell"
+    static let id = "machineOperatorsCell"
 
     let spacer = UIView()
     let divider = UIView()
@@ -56,12 +56,16 @@ class MainCell: UICollectionViewCell {
     }
 
     func setUp() {
-        divider.backgroundColor = #colorLiteral(red: 0.9404773116, green: 0.940477252, blue: 0.940477252, alpha: 1)
+        divider.backgroundColor = .gray
 
         hStack1.addArrangedSubview(fieldLabel)
         hStack1.addArrangedSubview(spacer)
         hStack1.addArrangedSubview(fieldSizeLabel)
-        
+
+        contentView.layer.cornerRadius = 12
+        contentView.layer.borderColor = UIColor.black.cgColor
+        contentView.layer.borderWidth = 0.3
+
         contentView.addSubview(hStack1)
         contentView.addSubview(divider)
 

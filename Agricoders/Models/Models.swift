@@ -38,7 +38,14 @@ let objects: [AgroObject] = [
     .init(
         field: ("Поле 1", "100 га"),
         workers: [
-            .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
+            .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га"),
+            .init(fio: ("Иванов Н.В.", .enable), machine: .tractor, instr: .cultivator, scopeWork: "40 га")
+        ]
+    ),
+    .init(
+        field: ("Поле 1", "100 га"),
+        workers: [
+            .init(fio: ("Петров Н.В.", .disable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
         ]
     ),
     .init(
@@ -60,9 +67,19 @@ let objects: [AgroObject] = [
         ]
     ),
     .init(
-        field: ("Поле 1", "100 га"),
+        field: ("Поле 99", "100 га"),
         workers: [
-            .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га")
+            .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га"),
+            .init(fio: ("Иванов Н.В.", .enable), machine: .tractor, instr: .cultivator, scopeWork: "40 га")
         ]
-    )
+    ),
+    .init(
+        field: ("Поле 666", "100 га"),
+        workers: [
+            .init(fio: ("Петров Н.В.", .enable), machine: .combine_harvester, instr: .cultivator, scopeWork: "40 га"),
+            .init(fio: ("Иванов Н.В.", .enable), machine: .tractor, instr: .cultivator, scopeWork: "40 га")
+        ]
+    ),
 ]
+
+
