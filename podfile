@@ -1,4 +1,5 @@
 use_frameworks!
 target 'Agricoders' do
     pod 'SnapKit'
+    pod 'MBRadioCheckboxButton'
 end

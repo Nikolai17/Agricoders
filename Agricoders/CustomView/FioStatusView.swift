@@ -111,3 +111,7 @@ extension UIView {
     }
 
 }
+
+extension UIColor {
+    static let agro = #colorLiteral(red: 0.6550073028, green: 0.7082381845, blue: 0.04327847064, alpha: 1)
+}

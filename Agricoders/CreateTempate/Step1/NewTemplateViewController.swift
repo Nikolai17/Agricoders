@@ -20,6 +20,7 @@ class NewTemplateViewController: UIViewController {
 
     let calendarView = UICalendarView()
     let timePicker = UIDatePicker()
+    let progressView = UIProgressView()
 
     var time: String?
     var dateComponents: DateComponents?
@@ -35,7 +36,7 @@ class NewTemplateViewController: UIViewController {
         let button = UIButton()
         button.setTitle("Далее", for: .normal)
         button.addTarget(self, action: #selector(buttonDidTap), for: .touchUpInside)
-        button.backgroundColor = #colorLiteral(red: 0.6550073028, green: 0.7082381845, blue: 0.04327847064, alpha: 1)
+        button.backgroundColor = .agro
         button.round(with: .both, radius: 10)
         button.layer.masksToBounds = true
         button.isEnabled = false
@@ -47,7 +48,7 @@ class NewTemplateViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        continueButton.isEnabled = false
+        title = "Выберите начало"
     }
 
     override func viewDidLoad() {
@@ -56,12 +57,15 @@ class NewTemplateViewController: UIViewController {
     }
 
     func setUp() {
+        progressView.setProgress(0, animated: true)
+        progressView.progressTintColor = .agro
         self.timePicker.datePickerMode = .time
         timeLabel.text = "Время начала "
         view.backgroundColor = #colorLiteral(red: 0.9404773116, green: 0.940477252, blue: 0.940477252, alpha: 1)
-        title = "Выберите начало"
+
         view.addSubview(calendarView)
         view.addSubview(continueButton)
+        view.addSubview(progressView)
 
         let container = UIView()
         container.backgroundColor = .white
@@ -75,7 +79,7 @@ class NewTemplateViewController: UIViewController {
         timePicker.addTarget(self, action: #selector(startTimeDiveChanged), for: UIControl.Event.valueChanged)
 
         let gregorianCalendar = Calendar(identifier: .gregorian)
-        calendarView.tintColor = #colorLiteral(red: 0.6550073028, green: 0.7082381845, blue: 0.04327847064, alpha: 1)
+        calendarView.tintColor = .agro
         calendarView.backgroundColor = .white
         calendarView.round(with: .top, radius: 10)
         calendarView.layer.masksToBounds = true
@@ -88,17 +92,24 @@ class NewTemplateViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .never
 
-        calendarView.snp.makeConstraints {
+        progressView.snp.makeConstraints {
+            $0.height.equalTo(4)
             $0.leading.equalToSuperview().offset(20)
             $0.trailing.equalToSuperview().inset(20)
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+        }
+
+        calendarView.snp.makeConstraints {
+            $0.leading.equalToSuperview().offset(20)
+            $0.trailing.equalToSuperview().inset(20)
+            $0.top.equalTo(progressView.snp.bottom).offset(24)
         }
 
         container.snp.makeConstraints {
             $0.top.equalTo(calendarView.snp.bottom)
             $0.leading.equalToSuperview().offset(20)
             $0.trailing.equalToSuperview().inset(20)
-            $0.height.equalTo(40)
+            $0.height.equalTo(50)
         }
 
         timeLabel.snp.makeConstraints {
@@ -107,7 +118,7 @@ class NewTemplateViewController: UIViewController {
         }
 
         timePicker.snp.makeConstraints {
-            $0.centerY.equalTo(timeLabel.snp.centerY)
+            $0.centerY.equalTo(timeLabel.snp.centerY).offset(-5)
             $0.trailing.equalToSuperview().inset(16)
         }
 
@@ -123,11 +134,11 @@ class NewTemplateViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.timeStyle = .short
         time = formatter.string(from: sender.date)
-//        timePicker.removeFromSuperview() // if you want to remove time picker
     }
 
     @objc func buttonDidTap() {
-        print("tap")
+        let viewController = NewTemplateStep2ViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

@@ -1,16 +1,20 @@
 PODS:
+  - MBRadioCheckboxButton (2.0)
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
+  - MBRadioCheckboxButton
   - SnapKit
 
 SPEC REPOS:
   trunk:
+    - MBRadioCheckboxButton
     - SnapKit
 
 SPEC CHECKSUMS:
+  MBRadioCheckboxButton: 6e2a2cdc441e292e45b64c4e65eb8fc1fc05eef2
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: e420da0cca3409ab5c3c1506d455fff25b760b80
+PODFILE CHECKSUM: aac80ac7994e96eae4232eb355453d956b442aaa
 
 COCOAPODS: 1.13.0

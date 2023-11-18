@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3587080F2B0920DE00E6512E /* Step2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587080E2B0920DE00E6512E /* Step2Cell.swift */; };
+		358708112B09266900E6512E /* ModelsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708102B09266900E6512E /* ModelsTemplate.swift */; };
+		358708162B0945F400E6512E /* NewTemplateStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708152B0945F400E6512E /* NewTemplateStep3ViewController.swift */; };
+		358708182B0946E400E6512E /* Step3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708172B0946E400E6512E /* Step3Cell.swift */; };
+		3587081A2B095BC700E6512E /* NewTemplateStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708192B095BC700E6512E /* NewTemplateStep4ViewController.swift */; };
+		3587081D2B095CA200E6512E /* Step4Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587081C2B095CA200E6512E /* Step4Cell.swift */; };
+		358708202B09617100E6512E /* NewTemplateStep5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587081F2B09617100E6512E /* NewTemplateStep5ViewController.swift */; };
+		358708232B0962E600E6512E /* NewTemplateStep6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708222B0962E600E6512E /* NewTemplateStep6ViewController.swift */; };
+		358708252B09680400E6512E /* Step6Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708242B09680400E6512E /* Step6Cell.swift */; };
+		358708272B09693D00E6512E /* Step6CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708262B09693D00E6512E /* Step6CellModel.swift */; };
 		35D4BDB72B07DAED000CE117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDB62B07DAED000CE117 /* AppDelegate.swift */; };
 		35D4BDB92B07DAED000CE117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDB82B07DAED000CE117 /* SceneDelegate.swift */; };
 		35D4BDBB2B07DAED000CE117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDBA2B07DAED000CE117 /* ViewController.swift */; };
@@ -27,11 +37,23 @@
 		35D4BDEA2B08D5C2000CE117 /* FioStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDE92B08D5C2000CE117 /* FioStatusView.swift */; };
 		35D4BDEC2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDEB2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift */; };
 		35D4BDF52B08FBC6000CE117 /* NewTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDF42B08FBC6000CE117 /* NewTemplateViewController.swift */; };
+		35D4BDF72B090FB5000CE117 /* NewTemplateStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDF62B090FB5000CE117 /* NewTemplateStep2ViewController.swift */; };
+		35D4BDF92B091FA2000CE117 /* Button+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDF82B091FA2000CE117 /* Button+extension.swift */; };
 		8C7BD89CF37F3B19EB6E7F8B /* Pods_Agricoders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95675487188D485D95AE89FC /* Pods_Agricoders.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2EE1E1895DECD55011CECA2E /* Pods-Agricoders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agricoders.debug.xcconfig"; path = "Target Support Files/Pods-Agricoders/Pods-Agricoders.debug.xcconfig"; sourceTree = "<group>"; };
+		3587080E2B0920DE00E6512E /* Step2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2Cell.swift; sourceTree = "<group>"; };
+		358708102B09266900E6512E /* ModelsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTemplate.swift; sourceTree = "<group>"; };
+		358708152B0945F400E6512E /* NewTemplateStep3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateStep3ViewController.swift; sourceTree = "<group>"; };
+		358708172B0946E400E6512E /* Step3Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step3Cell.swift; sourceTree = "<group>"; };
+		358708192B095BC700E6512E /* NewTemplateStep4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateStep4ViewController.swift; sourceTree = "<group>"; };
+		3587081C2B095CA200E6512E /* Step4Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step4Cell.swift; sourceTree = "<group>"; };
+		3587081F2B09617100E6512E /* NewTemplateStep5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateStep5ViewController.swift; sourceTree = "<group>"; };
+		358708222B0962E600E6512E /* NewTemplateStep6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateStep6ViewController.swift; sourceTree = "<group>"; };
+		358708242B09680400E6512E /* Step6Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step6Cell.swift; sourceTree = "<group>"; };
+		358708262B09693D00E6512E /* Step6CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6CellModel.swift; sourceTree = "<group>"; };
 		35D4BDB32B07DAED000CE117 /* Agricoders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agricoders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D4BDB62B07DAED000CE117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D4BDB82B07DAED000CE117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +76,8 @@
 		35D4BDE92B08D5C2000CE117 /* FioStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FioStatusView.swift; sourceTree = "<group>"; };
 		35D4BDEB2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachineOperatorsDescriptionView.swift; sourceTree = "<group>"; };
 		35D4BDF42B08FBC6000CE117 /* NewTemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateViewController.swift; sourceTree = "<group>"; };
+		35D4BDF62B090FB5000CE117 /* NewTemplateStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTemplateStep2ViewController.swift; sourceTree = "<group>"; };
+		35D4BDF82B091FA2000CE117 /* Button+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+extension.swift"; sourceTree = "<group>"; };
 		95675487188D485D95AE89FC /* Pods_Agricoders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agricoders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1A1A8EE2C6DA333A997F5A /* Pods-Agricoders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agricoders.release.xcconfig"; path = "Target Support Files/Pods-Agricoders/Pods-Agricoders.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +94,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		358708122B09277300E6512E /* Step1 */ = {
+			isa = PBXGroup;
+			children = (
+				35D4BDF42B08FBC6000CE117 /* NewTemplateViewController.swift */,
+			);
+			path = Step1;
+			sourceTree = "<group>";
+		};
+		358708132B09277F00E6512E /* Step2 */ = {
+			isa = PBXGroup;
+			children = (
+				358708102B09266900E6512E /* ModelsTemplate.swift */,
+				3587080E2B0920DE00E6512E /* Step2Cell.swift */,
+				35D4BDF62B090FB5000CE117 /* NewTemplateStep2ViewController.swift */,
+			);
+			path = Step2;
+			sourceTree = "<group>";
+		};
+		358708142B0945E400E6512E /* Step3 */ = {
+			isa = PBXGroup;
+			children = (
+				358708152B0945F400E6512E /* NewTemplateStep3ViewController.swift */,
+				358708172B0946E400E6512E /* Step3Cell.swift */,
+			);
+			path = Step3;
+			sourceTree = "<group>";
+		};
+		3587081B2B095BCB00E6512E /* Step4 */ = {
+			isa = PBXGroup;
+			children = (
+				358708192B095BC700E6512E /* NewTemplateStep4ViewController.swift */,
+				3587081C2B095CA200E6512E /* Step4Cell.swift */,
+			);
+			path = Step4;
+			sourceTree = "<group>";
+		};
+		3587081E2B09614700E6512E /* Step5 */ = {
+			isa = PBXGroup;
+			children = (
+				3587081F2B09617100E6512E /* NewTemplateStep5ViewController.swift */,
+			);
+			path = Step5;
+			sourceTree = "<group>";
+		};
+		358708212B0962DA00E6512E /* Step6 */ = {
+			isa = PBXGroup;
+			children = (
+				358708222B0962E600E6512E /* NewTemplateStep6ViewController.swift */,
+				358708242B09680400E6512E /* Step6Cell.swift */,
+				358708262B09693D00E6512E /* Step6CellModel.swift */,
+			);
+			path = Step6;
+			sourceTree = "<group>";
+		};
 		35D4BDAA2B07DAED000CE117 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				35D4BDE52B08C614000CE117 /* FioView.swift */,
+				35D4BDF82B091FA2000CE117 /* Button+extension.swift */,
 				35D4BDE92B08D5C2000CE117 /* FioStatusView.swift */,
 			);
 			path = CustomView;
@@ -207,7 +286,12 @@
 		35D4BDF32B08FBB0000CE117 /* CreateTempate */ = {
 			isa = PBXGroup;
 			children = (
-				35D4BDF42B08FBC6000CE117 /* NewTemplateViewController.swift */,
+				358708212B0962DA00E6512E /* Step6 */,
+				3587081E2B09614700E6512E /* Step5 */,
+				3587081B2B095BCB00E6512E /* Step4 */,
+				358708142B0945E400E6512E /* Step3 */,
+				358708132B09277F00E6512E /* Step2 */,
+				358708122B09277300E6512E /* Step1 */,
 			);
 			path = CreateTempate;
 			sourceTree = "<group>";
@@ -344,23 +428,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358708252B09680400E6512E /* Step6Cell.swift in Sources */,
 				35D4BDEA2B08D5C2000CE117 /* FioStatusView.swift in Sources */,
 				35D4BDD12B0802DF000CE117 /* MainTabBarViewController.swift in Sources */,
 				35D4BDF52B08FBC6000CE117 /* NewTemplateViewController.swift in Sources */,
 				35D4BDE62B08C614000CE117 /* FioView.swift in Sources */,
+				3587081A2B095BC700E6512E /* NewTemplateStep4ViewController.swift in Sources */,
 				35D4BDEC2B08DA29000CE117 /* MachineOperatorsDescriptionView.swift in Sources */,
 				35D4BDE42B08C5D7000CE117 /* MachineOperatorsCell.swift in Sources */,
 				35D4BDBB2B07DAED000CE117 /* ViewController.swift in Sources */,
+				358708162B0945F400E6512E /* NewTemplateStep3ViewController.swift in Sources */,
+				358708272B09693D00E6512E /* Step6CellModel.swift in Sources */,
 				35D4BDDC2B08305F000CE117 /* MachineOperatorsViewController.swift in Sources */,
+				35D4BDF92B091FA2000CE117 /* Button+extension.swift in Sources */,
 				35D4BDB72B07DAED000CE117 /* AppDelegate.swift in Sources */,
 				35D4BDD32B08032F000CE117 /* MainViewController.swift in Sources */,
+				35D4BDF72B090FB5000CE117 /* NewTemplateStep2ViewController.swift in Sources */,
 				35D4BDE82B08C80E000CE117 /* MachineOperatorsModels.swift in Sources */,
 				35D4BDCC2B07DC7F000CE117 /* NFCUtility.swift in Sources */,
 				35D4BDE02B08307E000CE117 /* ProfileViewController.swift in Sources */,
+				3587081D2B095CA200E6512E /* Step4Cell.swift in Sources */,
 				35D4BDB92B07DAED000CE117 /* SceneDelegate.swift in Sources */,
+				358708182B0946E400E6512E /* Step3Cell.swift in Sources */,
+				358708112B09266900E6512E /* ModelsTemplate.swift in Sources */,
+				3587080F2B0920DE00E6512E /* Step2Cell.swift in Sources */,
 				35D4BDDE2B08306D000CE117 /* CarsViewController.swift in Sources */,
 				35D4BDDA2B080B37000CE117 /* MainCell.swift in Sources */,
 				35D4BDD62B080ADC000CE117 /* Models.swift in Sources */,
+				358708202B09617100E6512E /* NewTemplateStep5ViewController.swift in Sources */,
+				358708232B0962E600E6512E /* NewTemplateStep6ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
