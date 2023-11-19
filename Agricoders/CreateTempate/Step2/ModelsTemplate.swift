@@ -91,3 +91,17 @@ let readyTemplateStep1Object: [ReadyTemplateStep1Model] = [
         descriptionSizeLabel: "25см"
     )
 ]
+
+struct TaskStep1Model {
+    let work: String
+    let workSize: String
+    let car: String
+    let carParametr: String
+}
+
+var taskStep1Objects: [TaskStep1Model] = [
+    .init(work: "Посев яровой пшеницы", workSize: "40 га", car: "Сеялка рядовая", carParametr: "3 см"),
+    .init(work: "Обработка культиватором", workSize: "40 га", car: "Сеялка рядовая", carParametr: "3 см"),
+    .init(work: "Посев чечевицы", workSize: "40 га", car: "Сеялка рядовая", carParametr: "3 см"),
+    .init(work: "Предпосевная обработка почвы", workSize: "40 га", car: "Сеялка рядовая", carParametr: "3 см")
+]

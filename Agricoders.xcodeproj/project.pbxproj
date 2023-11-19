@@ -20,6 +20,11 @@
 		3587082A2B09773D00E6512E /* ReadyTemplateStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708292B09773D00E6512E /* ReadyTemplateStep1ViewController.swift */; };
 		3587082D2B09786A00E6512E /* ReadyTemplateStep1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587082C2B09786A00E6512E /* ReadyTemplateStep1Cell.swift */; };
 		3587082F2B0978C500E6512E /* ReadyTemplateStep1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587082E2B0978C500E6512E /* ReadyTemplateStep1Model.swift */; };
+		358708312B09E42500E6512E /* MainTabBar2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708302B09E42500E6512E /* MainTabBar2ViewController.swift */; };
+		358708342B09E4B800E6512E /* TaskMechanicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708332B09E4B800E6512E /* TaskMechanicViewController.swift */; };
+		358708362B09E4D700E6512E /* ProfileMechanicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708352B09E4D700E6512E /* ProfileMechanicViewController.swift */; };
+		3587083C2B09E9E800E6512E /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587083B2B09E9E800E6512E /* TaskView.swift */; };
+		3587083E2B09FC6F00E6512E /* TaskStep1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587083D2B09FC6F00E6512E /* TaskStep1Cell.swift */; };
 		35D4BDB72B07DAED000CE117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDB62B07DAED000CE117 /* AppDelegate.swift */; };
 		35D4BDB92B07DAED000CE117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDB82B07DAED000CE117 /* SceneDelegate.swift */; };
 		35D4BDBB2B07DAED000CE117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDBA2B07DAED000CE117 /* ViewController.swift */; };
@@ -60,6 +65,11 @@
 		358708292B09773D00E6512E /* ReadyTemplateStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyTemplateStep1ViewController.swift; sourceTree = "<group>"; };
 		3587082C2B09786A00E6512E /* ReadyTemplateStep1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyTemplateStep1Cell.swift; sourceTree = "<group>"; };
 		3587082E2B0978C500E6512E /* ReadyTemplateStep1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyTemplateStep1Model.swift; sourceTree = "<group>"; };
+		358708302B09E42500E6512E /* MainTabBar2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar2ViewController.swift; sourceTree = "<group>"; };
+		358708332B09E4B800E6512E /* TaskMechanicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskMechanicViewController.swift; sourceTree = "<group>"; };
+		358708352B09E4D700E6512E /* ProfileMechanicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMechanicViewController.swift; sourceTree = "<group>"; };
+		3587083B2B09E9E800E6512E /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		3587083D2B09FC6F00E6512E /* TaskStep1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskStep1Cell.swift; sourceTree = "<group>"; };
 		35D4BDB32B07DAED000CE117 /* Agricoders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agricoders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D4BDB62B07DAED000CE117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D4BDB82B07DAED000CE117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +182,49 @@
 			path = Step1;
 			sourceTree = "<group>";
 		};
+		358708322B09E48800E6512E /* Mechanic */ = {
+			isa = PBXGroup;
+			children = (
+				358708372B09E4E700E6512E /* Modules */,
+			);
+			path = Mechanic;
+			sourceTree = "<group>";
+		};
+		358708372B09E4E700E6512E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				358708392B09E4FC00E6512E /* Profile */,
+				358708382B09E4F000E6512E /* Task */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		358708382B09E4F000E6512E /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				3587083A2B09E9CF00E6512E /* View */,
+				358708332B09E4B800E6512E /* TaskMechanicViewController.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		358708392B09E4FC00E6512E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				358708352B09E4D700E6512E /* ProfileMechanicViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3587083A2B09E9CF00E6512E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3587083D2B09FC6F00E6512E /* TaskStep1Cell.swift */,
+				3587083B2B09E9E800E6512E /* TaskView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		35D4BDAA2B07DAED000CE117 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +246,7 @@
 		35D4BDB52B07DAED000CE117 /* Agricoders */ = {
 			isa = PBXGroup;
 			children = (
+				358708322B09E48800E6512E /* Mechanic */,
 				358708282B09770200E6512E /* ReadyTemplates */,
 				35D4BDF32B08FBB0000CE117 /* CreateTempate */,
 				35D4BDEE2B08E27E000CE117 /* CustomView */,
@@ -224,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				35D4BDD02B0802DF000CE117 /* MainTabBarViewController.swift */,
+				358708302B09E42500E6512E /* MainTabBar2ViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -474,15 +529,20 @@
 				35D4BDF72B090FB5000CE117 /* NewTemplateStep2ViewController.swift in Sources */,
 				35D4BDE82B08C80E000CE117 /* MachineOperatorsModels.swift in Sources */,
 				35D4BDCC2B07DC7F000CE117 /* NFCUtility.swift in Sources */,
+				358708312B09E42500E6512E /* MainTabBar2ViewController.swift in Sources */,
 				35D4BDE02B08307E000CE117 /* ProfileViewController.swift in Sources */,
 				3587081D2B095CA200E6512E /* Step4Cell.swift in Sources */,
 				35D4BDB92B07DAED000CE117 /* SceneDelegate.swift in Sources */,
 				358708182B0946E400E6512E /* Step3Cell.swift in Sources */,
 				358708112B09266900E6512E /* ModelsTemplate.swift in Sources */,
+				3587083E2B09FC6F00E6512E /* TaskStep1Cell.swift in Sources */,
+				3587083C2B09E9E800E6512E /* TaskView.swift in Sources */,
 				3587080F2B0920DE00E6512E /* Step2Cell.swift in Sources */,
 				35D4BDDE2B08306D000CE117 /* CarsViewController.swift in Sources */,
 				35D4BDDA2B080B37000CE117 /* MainCell.swift in Sources */,
 				35D4BDD62B080ADC000CE117 /* Models.swift in Sources */,
+				358708342B09E4B800E6512E /* TaskMechanicViewController.swift in Sources */,
+				358708362B09E4D700E6512E /* ProfileMechanicViewController.swift in Sources */,
 				358708202B09617100E6512E /* NewTemplateStep5ViewController.swift in Sources */,
 				358708232B0962E600E6512E /* NewTemplateStep6ViewController.swift in Sources */,
 			);
