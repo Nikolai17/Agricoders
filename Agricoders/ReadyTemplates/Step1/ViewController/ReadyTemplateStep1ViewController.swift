@@ -19,6 +19,12 @@ class ReadyTemplateStep1ViewController: UIViewController, UICollectionViewDataSo
     }
 
     let progressView = UIProgressView()
+    let searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        searchBar.placeholder = "Поиск"
+
+        return searchBar
+    }()
 
     private lazy var continueButton: UIButton = {
         let button = UIButton()
@@ -95,6 +101,7 @@ class ReadyTemplateStep1ViewController: UIViewController, UICollectionViewDataSo
         view.addSubview(progressView)
         view.addSubview(collection)
         view.addSubview(continueButton)
+        view.addSubview(searchBar)
 
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .never
@@ -106,8 +113,15 @@ class ReadyTemplateStep1ViewController: UIViewController, UICollectionViewDataSo
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
         }
 
-        collection.snp.makeConstraints {
+        searchBar.snp.makeConstraints {
             $0.top.equalTo(progressView.snp.bottom).offset(10)
+            $0.leading.equalToSuperview().offset(16)
+            $0.trailing.equalToSuperview().inset(16)
+
+        }
+
+        collection.snp.makeConstraints {
+            $0.top.equalTo(searchBar.snp.bottom).offset(10)
             $0.leading.equalToSuperview().offset(16)
             $0.trailing.equalToSuperview().inset(16)
             $0.bottom.equalTo(continueButton.snp.top).offset(10)
@@ -122,7 +136,7 @@ class ReadyTemplateStep1ViewController: UIViewController, UICollectionViewDataSo
     }
 
     @objc func buttonDidTap() {
-        let viewController = NewTemplateStep2ViewController()
+        let viewController = ReadyTemplateStep2ViewController()
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
