@@ -95,13 +95,16 @@ let readyTemplateStep1Object: [ReadyTemplateStep1Model] = [
 struct TaskStep1Model {
     let work: String
     let workSize: String
-    let car: String
-    let carParametr: String
+    let car1: String
+    let carParametr1: String
+
+    let car2: String
+    let carParametr2: String
 }
 
 var taskStep1Objects: [TaskStep1Model] = [
-    .init(work: "Посев яровой пшеницы", workSize: "40 га", car: "Сеялка рядовая", carParametr: "3 см"),
-    .init(work: "Обработка культиватором", workSize: "40 га", car: "Сеялка рядовая", carParametr: "3 см"),
-    .init(work: "Посев чечевицы", workSize: "40 га", car: "Сеялка рядовая", carParametr: "3 см"),
-    .init(work: "Предпосевная обработка почвы", workSize: "40 га", car: "Сеялка рядовая", carParametr: "3 см")
+    .init(work: "Посев яровой пшеницы", workSize: "А-121-АБ", car1: "Сеялка рядовая", carParametr1: "3 см", car2: "Сеялка рядовая", carParametr2: "3 см"),
+    .init(work: "Обработка культиватором", workSize: "А-121-АБ", car1: "Сеялка рядовая", carParametr1: "3 см", car2: "Сеялка рядовая", carParametr2: "3 см"),
+    .init(work: "Посев чечевицы", workSize: "А-121-АБ", car1: "Сеялка рядовая", carParametr1: "3 см", car2: "Сеялка рядовая", carParametr2: "3 см"),
+    .init(work: "Предпосевная обработка", workSize: "А-121-АБ", car1: "Сеялка рядовая", carParametr1: "3 см", car2: "Сеялка рядовая", carParametr2: "3 см")
 ]

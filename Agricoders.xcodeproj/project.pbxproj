@@ -25,6 +25,7 @@
 		358708362B09E4D700E6512E /* ProfileMechanicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358708352B09E4D700E6512E /* ProfileMechanicViewController.swift */; };
 		3587083C2B09E9E800E6512E /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587083B2B09E9E800E6512E /* TaskView.swift */; };
 		3587083E2B09FC6F00E6512E /* TaskStep1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587083D2B09FC6F00E6512E /* TaskStep1Cell.swift */; };
+		358708402B0A069700E6512E /* TaskStep2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587083F2B0A069700E6512E /* TaskStep2View.swift */; };
 		35D4BDB72B07DAED000CE117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDB62B07DAED000CE117 /* AppDelegate.swift */; };
 		35D4BDB92B07DAED000CE117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDB82B07DAED000CE117 /* SceneDelegate.swift */; };
 		35D4BDBB2B07DAED000CE117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D4BDBA2B07DAED000CE117 /* ViewController.swift */; };
@@ -70,6 +71,7 @@
 		358708352B09E4D700E6512E /* ProfileMechanicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMechanicViewController.swift; sourceTree = "<group>"; };
 		3587083B2B09E9E800E6512E /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		3587083D2B09FC6F00E6512E /* TaskStep1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskStep1Cell.swift; sourceTree = "<group>"; };
+		3587083F2B0A069700E6512E /* TaskStep2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskStep2View.swift; sourceTree = "<group>"; };
 		35D4BDB32B07DAED000CE117 /* Agricoders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agricoders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D4BDB62B07DAED000CE117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D4BDB82B07DAED000CE117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			children = (
 				3587083D2B09FC6F00E6512E /* TaskStep1Cell.swift */,
 				3587083B2B09E9E800E6512E /* TaskView.swift */,
+				3587083F2B0A069700E6512E /* TaskStep2View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				358708312B09E42500E6512E /* MainTabBar2ViewController.swift in Sources */,
 				35D4BDE02B08307E000CE117 /* ProfileViewController.swift in Sources */,
 				3587081D2B095CA200E6512E /* Step4Cell.swift in Sources */,
+				358708402B0A069700E6512E /* TaskStep2View.swift in Sources */,
 				35D4BDB92B07DAED000CE117 /* SceneDelegate.swift in Sources */,
 				358708182B0946E400E6512E /* Step3Cell.swift in Sources */,
 				358708112B09266900E6512E /* ModelsTemplate.swift in Sources */,

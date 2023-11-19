@@ -49,6 +49,22 @@ class TaskView: UIView {
         return label
     }()
 
+    let carLabel2:  UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = #colorLiteral(red: 0.6606984735, green: 0.6606983542, blue: 0.6606983542, alpha: 1)
+
+        return label
+    }()
+
+    let carParametrLabel2:  UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = #colorLiteral(red: 0.6606984735, green: 0.6606983542, blue: 0.6606983542, alpha: 1)
+
+        return label
+    }()
+
     private lazy var continueButton: UIButton = {
         let button = UIButton()
         button.setTitle("Начать работу", for: .normal)
@@ -74,6 +90,12 @@ class TaskView: UIView {
         return button
     }()
 
+    let timerView: TaskStep2View = {
+        let view = TaskStep2View()
+        view.isHidden = true
+        return view
+    }()
+
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -95,9 +117,13 @@ class TaskView: UIView {
         addSubview(workSizeLabel)
         addSubview(carLabel)
         addSubview(carParametrLabel)
+        addSubview(carLabel2)
+        addSubview(carParametrLabel2)
+
         addSubview(separator)
         addSubview(continueButton)
         addSubview(continueButton2)
+        addSubview(timerView)
 
         backgroundColor = .white
 
@@ -128,8 +154,18 @@ class TaskView: UIView {
             $0.trailing.equalToSuperview().inset(16)
         }
 
-        continueButton.snp.makeConstraints {
+        carLabel2.snp.makeConstraints {
             $0.top.equalTo(carLabel.snp.bottom).offset(10)
+            $0.leading.equalToSuperview().offset(16)
+        }
+
+        carParametrLabel2.snp.makeConstraints {
+            $0.centerY.equalTo(carLabel2)
+            $0.trailing.equalToSuperview().inset(16)
+        }
+
+        continueButton.snp.makeConstraints {
+            $0.top.equalTo(carLabel2.snp.bottom).offset(10)
             $0.leading.equalToSuperview().offset(16)
             $0.trailing.equalToSuperview().inset(16)
             $0.height.equalTo(50)
@@ -141,17 +177,29 @@ class TaskView: UIView {
             $0.trailing.equalToSuperview().inset(16)
             $0.height.equalTo(50)
         }
+
+        timerView.snp.makeConstraints {
+//            $0.top.equalTo(continueButton2.snp.bottom).offset(16)
+            $0.leading.equalToSuperview()
+            $0.trailing.equalToSuperview()
+            $0.bottom.equalToSuperview().offset(-35)
+            $0.height.equalTo(70)
+        }
     }
 
     func config(_ model: TaskStep1Model) {
         workLabel.text = model.work
         workSizeLabel.text = model.workSize
-        carLabel.text = model.car
-        carParametrLabel.text = model.carParametr
+        carLabel.text = model.car1
+        carParametrLabel.text = model.carParametr1
+        carLabel2.text = model.car2
+        carParametrLabel2.text = model.carParametr2
     }
 
     @objc func buttonDidTap1() {
-        delegate?.didTapContinueButton()
+        continueButton.isHidden = true
+        continueButton2.isHidden = true
+        timerView.isHidden = false
     }
 
     @objc func buttonDidTap2() {

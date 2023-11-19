@@ -60,7 +60,7 @@ class TaskMechanicViewController: UIViewController, UICollectionViewDataSource, 
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
         layout.scrollDirection = .vertical
-        layout.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 200)
+        layout.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 250)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 20
 
@@ -124,6 +124,55 @@ class TaskMechanicViewController: UIViewController, UICollectionViewDataSource, 
             break
         }
     }
+
+    func showAlert(_ tag: Int) {
+        let alert = UIAlertController(title: "Укажите причину", message: "Почему вы не можете выполнить работу?", preferredStyle: .actionSheet)
+
+        alert.addAction(
+            UIAlertAction(
+                title: "Сломался агрегат",
+                style: .default ,
+                handler: { [weak self] _ in
+                    taskStep1Objects.remove(at: tag)
+                    self?.collection.reloadData()
+                }
+            )
+        )
+
+        alert.addAction(
+            UIAlertAction(
+                title: "Погодные условия",
+                style: .default,
+                handler:{ [weak self] _ in
+                    taskStep1Objects.remove(at: tag)
+                    self?.collection.reloadData()
+                }
+            )
+        )
+
+        alert.addAction(
+            UIAlertAction(
+                title: "Другое",
+                style: .default,
+                handler:{ [weak self] _ in
+                    taskStep1Objects.remove(at: tag)
+                    self?.collection.reloadData()
+                }
+            )
+        )
+
+        alert.addAction(
+            UIAlertAction(
+                title: "Закрыть",
+                style: .cancel,
+                handler:{ [weak self] _ in
+//                    self?.createTemplateTapped()
+                }
+            )
+        )
+
+        present(alert, animated: true, completion: nil)
+    }
 }
 
 // MARK: - TaskStep1CellDelegate
@@ -135,7 +184,6 @@ extension TaskMechanicViewController: TaskStep1CellDelegate {
     }
     
     func didTapCancelButton(_ tag: Int) {
-        taskStep1Objects.remove(at: tag)
-        collection.reloadData()
+        showAlert(tag)
     }
 }
